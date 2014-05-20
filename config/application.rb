@@ -23,7 +23,8 @@ module Crowdhoster
     config.crowdtilt_production_secret = ENV['CROWDTILT_PRODUCTION_SECRET']
 
     # --- Standard Rails Config ---
-    config.time_zone = 'GMT'
+    config.i18n.default_locale = :ja
+    config.time_zone = 'JST'
     config.encoding = "utf-8"
     config.filter_parameters += [:password, :card_number, :security_code]
     config.active_record.whitelist_attributes = true
