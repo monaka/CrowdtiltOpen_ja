@@ -24,7 +24,7 @@ module Crowdhoster
 
     # --- Standard Rails Config ---
     config.i18n.default_locale = :ja
-    config.time_zone = 'JST'
+    config.time_zone = 'Tokyo'
     config.encoding = "utf-8"
     config.filter_parameters += [:password, :card_number, :security_code]
     config.active_record.whitelist_attributes = true
