@@ -56,13 +56,14 @@ module Crowdhoster
 
     #Mailgun options
     config.action_mailer.smtp_settings = {
-       :authentication => :plain,
-       :address => "smtp.mailgun.org",
-       :port => 587,
-       :domain => ENV['MAILGUN_DOMAIN'],
-       :user_name => ENV['MAILGUN_USERNAME'],
-       :password => ENV['MAILGUN_PASSWORD']
-      }
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'heroku.com',
+      :enable_starttls_auto => true
+    }
 
     config.processing_fee_percentage = 2.9
     config.processing_fee_flat_cents = 30

@@ -53,7 +53,6 @@ To run Crowdtilt Open, you'll also need to do the following:
 
 * Email [support.api@crowdtilt.com](mailto:support.api@crowdtilt.com?subject=API Key Request for Crowdtilt Open&body=Hi! I'd like to deploy a Crowdtilt Open app. The Github readme sent me here to ask for an API key. Thanks!) to get your Crowdtilt API keys
 * Create an [Amazon Web Services S3 account](http://aws.amazon.com/s3/) (free) and set up a bucket for your assets. The bucket should be in the US Standard (us-east-1) zone.
-* Sign up for [Mailgun](http://www.mailgun.com/) (free)
 * When you're ready to activate payments, sign up for a [Balanced Payments](https://www.balancedpayments.com/) account.
 
 ### Local Setup
@@ -104,9 +103,6 @@ ENABLE_ASSET_SYNC=true
 AWS_BUCKET=awsbucket
 AWS_ACCESS_KEY_ID=awsaccesskey
 AWS_SECRET_ACCESS_KEY=awssecretaccesskey
-MAILGUN_DOMAIN=myawesomeapp.mailgun.org
-MAILGUN_PASSWORD=mailgunpassword
-MAILGUN_USERNAME=postmaster@myawesomeapp.mailgun.org
 SECRET_TOKEN=secrettoken
 DEVISE_SECRET_KEY=secrettoken
 ```
@@ -148,6 +144,12 @@ Create a new Heroku app
 
 ```
 $ heroku create {APP NAME}
+```
+
+Setup SendGrid addon.
+
+```
+$ heroku addons:add sendgrid
 ```
 
 Install the Heroku config plugin if you don't already have it installed
