@@ -44,12 +44,12 @@ class CampaignsController < ApplicationController
         begin
           @reward = Reward.find(params[:reward])
         rescue StandardError => exception
-          redirect_to checkout_amount_url(@campaign), flash: { info: "This reward is unavailable. Please select a different reward!" }
+          redirect_to checkout_amount_url(@campaign), flash: { info: I18n.t('controllers.application_controller.this_reward_is_unavailable') }
           return
         end
         unless @reward && @reward.campaign_id == @campaign.id && @amount >= @reward.price && !@reward.sold_out?
           if @reward.sold_out?
-            flash = { info: "This reward is unavailable. Please select a different reward!" }
+            flash = { info: I18n.t('controllers.application_controller.this_reward_is_unavailable') }
           else
             flash = { warning: "Please enter a higher amount to redeem this reward!" }
           end
@@ -81,7 +81,7 @@ class CampaignsController < ApplicationController
       @reward = Reward.find_by_id(params[:reward])
       unless reward_choice_validates?(@reward, @campaign, payment_params[:amount])
         if @reward.sold_out?
-          flash = { info: "This reward is unavailable. Please select a different reward!" }
+          flash = { info: I18n.t('controllers.application_controller.this_reward_is_unavailable') }
         else
           flash = { warning: "Please enter a higher amount to redeem this reward!" }
         end
@@ -222,7 +222,7 @@ class CampaignsController < ApplicationController
   def check_published
     if !@campaign.published_flag
       unless user_signed_in? && current_user.admin?
-        redirect_to root_url, :flash => { :info => "Campaign is no longer available" }
+        redirect_to root_url, :flash => { :info => I18n.t('campaign_is_no_longer_available') }
       end
     end
   end

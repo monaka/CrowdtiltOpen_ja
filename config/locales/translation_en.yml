@@ -5,6 +5,9 @@ en:
       please_sign_in_below: 'Please sign in below.'
       you_must_be_admin: 'You must be an admin to access that page'
       an_error_occured: 'An error occurred, please contact'
+    campaign_controller:
+      this_reward_is_unavailable: 'This reward is unavailable. Please select a different reward!'
+      campaign_is_no_longer_avaliable: 'Campaign is no longer available'
 
   view:
     admin:

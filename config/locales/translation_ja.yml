@@ -5,6 +5,9 @@ ja:
       please_sign_in_below: 'サインインしてください。'
       you_must_be_admin: '管理者のみページヘのアクセスできます'
       an_error_occured: 'エラーが発生しました。連絡してください'
+    campaign_controller:
+      this_reward_is_unavailable: 'この特典はありません。別の特典を選んでください!'
+      campaign_is_no_longer_avaliable: 'キャンペーンがありません'
 
   view:
     devise:
