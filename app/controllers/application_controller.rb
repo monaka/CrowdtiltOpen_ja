@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
 
   def verify_admin
     if !current_user.admin?
-      redirect_to root_url, :flash => { :error => "You must be an admin to access that page" }
+      redirect_to root_url, :flash => { :error => t('controllers.application_controller.you_must_be_admin') }
     end
   end
 
@@ -55,7 +55,7 @@ class ApplicationController < ActionController::Base
         rescue => exception
           @settings.update_attribute :initialized_flag, false
           sign_out current_user
-          redirect_to new_user_registration_url, :flash => { :error => "An error occurred, please contact open@crowdtilt.com: #{exception.message}" }
+          redirect_to new_user_registration_url, :flash => { :error => "#{controllers.application_controller.an_error_occured} open@crowdtilt.com: #{exception.message}" }
           return
         else
           @settings.update_attribute :ct_sandbox_admin_id, sandbox_admin['user']['id']
@@ -66,9 +66,9 @@ class ApplicationController < ActionController::Base
         redirect_to admin_dashboard_url, :flash => { :signup_modal => true }
       else
         if (User.count == 0)
-            redirect_to new_user_registration_url, :flash => { :info => "Please create an account below to initialize the app." }
+            redirect_to new_user_registration_url, :flash => { :info => t('controllers.application_controller.initialize_app') }
         else
-            redirect_to user_session_url , :flash => { :info => "Please sign in below." }
+            redirect_to user_session_url , :flash => { :info => t('controllers.application_controller.please_sign_in_below') }
         end
       end
     end

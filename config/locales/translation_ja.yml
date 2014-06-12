@@ -1,0 +1,215 @@
+ja:
+  controllers:
+    application_controller:
+      initialize_app: 'アプリを初期化するためにアカウントを作成してください。'
+      please_sign_in_below: 'サインインしてください。'
+      you_must_be_admin: '管理者のみページヘのアクセスできます'
+      an_error_occured: 'エラーが発生しました。連絡してください'
+
+  view:
+    devise:
+      confirmations:
+        new:
+          resend: '同意の手順を再送する'
+      registrations:
+        new:
+          new_user_p: '新しいユーザですか?'
+          new_user_message: 'アカウントを作成してください。'
+          new_crowdtilt_open_app: '新規 Crowdtilt Open アプリ'
+          new_app_message: '新しい Crowdtilt Open App アプリのようです! サイト管理者となるユーザを作成してください:'
+          create_my_account: 'アカウント作成'
+          already_have_an_account_p: 'すでにアカウントをお持ちですか?'
+      password:
+        new:
+          forgot_your_password_p: 'パスワードをお忘れですか?'
+          please_enter_your_email_below: 'お客様のEメールアドレスを入力してください。'
+          send_password_reset_email: 'パスワードリセットのEメールを送信'
+        edit:
+          change_your_password: 'パスワード変更'
+          change_my_password: 'パスワードを変更する'
+          new_password: '新しいパスワード'
+          confirm_new_password: '新しいパスワード(再度)'
+
+  activerecord:
+    models:
+      campaign: campaign  #g
+      ckeditor/asset: ckeditor/asset  #g
+      ckeditor/attachment_file: ckeditor/attachment_file  #g
+      ckeditor/picture: ckeditor/picture  #g
+      faq: faq  #g
+      payment: payment  #g
+      reward: reward  #g
+      settings: settings  #g
+      user: user  #g
+
+    attributes:
+      campaign:
+        additional_info_label: additional_info_label  #g
+        apply_processing_fee: apply_processing_fee  #g
+        checkout_sidebar_content: checkout_sidebar_content  #g
+        collect_additional_info: collect_additional_info  #g
+        collect_shipping_flag: collect_shipping_flag  #g
+        comments_shortname: comments_shortname  #g
+        confirmation_email_content: confirmation_email_content  #g
+        confirmation_page_content: confirmation_page_content  #g
+        contributor_reference: contributor_reference  #g
+        expiration_date: expiration_date  #g
+        facebook_description: facebook_description  #g
+        facebook_image_content_type: facebook_image_content_type  #g
+        facebook_image_file_name: facebook_image_file_name  #g
+        facebook_image_file_size: facebook_image_file_size  #g
+        facebook_image_updated_at: facebook_image_updated_at  #g
+        facebook_title: facebook_title  #g
+        faqs: faqs  #g
+        fixed_payment_amount: fixed_payment_amount  #g
+        goal_dollars: goal_dollars  #g
+        goal_orders: goal_orders  #g
+        goal_type: goal_type  #g
+        include_comments: include_comments  #g
+        include_rewards: include_rewards  #g
+        include_rewards_claimed: include_rewards_claimed  #g
+        is_expired: is_expired  #g
+        is_paid: is_paid  #g
+        is_tilted: is_tilted  #g
+        main_content: main_content  #g
+        main_image_content_type: main_image_content_type  #g
+        main_image_file_name: main_image_file_name  #g
+        main_image_file_size: main_image_file_size  #g
+        main_image_updated_at: main_image_updated_at  #g
+        media_type: media_type  #g
+        min_payment_amount: min_payment_amount  #g
+        name: name  #g
+        payment_type: payment_type  #g
+        payments: payments  #g
+        primary_call_to_action_button: primary_call_to_action_button  #g
+        primary_call_to_action_description: primary_call_to_action_description  #g
+        production_flag: production_flag  #g
+        progress_text: progress_text  #g
+        published_flag: published_flag  #g
+        reward_reference: reward_reference  #g
+        rewards: rewards  #g
+        secondary_call_to_action_button: secondary_call_to_action_button  #g
+        secondary_call_to_action_description: secondary_call_to_action_description  #g
+        slug: slug  #g
+        stats_number_of_contributions: stats_number_of_contributions  #g
+        stats_raised_amount: stats_raised_amount  #g
+        stats_tilt_percent: stats_tilt_percent  #g
+        stats_unique_contributors: stats_unique_contributors  #g
+        tweet_text: tweet_text  #g
+        video_placeholder_content_type: video_placeholder_content_type  #g
+        video_placeholder_file_name: video_placeholder_file_name  #g
+        video_placeholder_file_size: video_placeholder_file_size  #g
+        video_placeholder_updated_at: video_placeholder_updated_at  #g
+
+      ckeditor/asset:
+        assetable: :activerecord.models.assetable  #g
+        assetable_type: assetable_type  #g
+        data_content_type: data_content_type  #g
+        data_file_name: data_file_name  #g
+        data_file_size: data_file_size  #g
+        height: height  #g
+        width: width  #g
+
+      ckeditor/attachment_file:
+        assetable: :activerecord.models.assetable  #g
+        assetable_type: assetable_type  #g
+        data_content_type: data_content_type  #g
+        data_file_name: data_file_name  #g
+        data_file_size: data_file_size  #g
+        height: height  #g
+        width: width  #g
+
+      ckeditor/picture:
+        assetable: :activerecord.models.assetable  #g
+        assetable_type: assetable_type  #g
+        data_content_type: data_content_type  #g
+        data_file_name: data_file_name  #g
+        data_file_size: data_file_size  #g
+        height: height  #g
+        width: width  #g
+
+      faq:
+        answer: answer  #g
+        campaign: :activerecord.models.campaign  #g
+        question: question  #g
+        sort_order: sort_order  #g
+
+      payment:
+        additional_info: additional_info  #g
+        address_one: address_one  #g
+        address_two: address_two  #g
+        admin_fee_amount: admin_fee_amount  #g
+        amount: amount  #g
+        billing_postal_code: billing_postal_code  #g
+        campaign: :activerecord.models.campaign  #g
+        card_expiration_month: card_expiration_month  #g
+        card_expiration_year: card_expiration_year  #g
+        card_last_four: card_last_four  #g
+        card_type: card_type  #g
+        city: city  #g
+        client_timestamp: client_timestamp  #g
+        country: country  #g
+        email: email  #g
+        fullname: fullname  #g
+        postal_code: postal_code  #g
+        quantity: quantity  #g
+        reward: :activerecord.models.reward  #g
+        state: state  #g
+        status: status  #g
+        user_fee_amount: user_fee_amount  #g
+
+      reward:
+        campaign: :activerecord.models.campaign  #g
+        collect_shipping_flag: collect_shipping_flag  #g
+        delivery_date: delivery_date  #g
+        description: description  #g
+        image_url: image_url  #g
+        include_claimed: include_claimed  #g
+        number: number  #g
+        payments: payments  #g
+        price: price  #g
+        title: title  #g
+        visible_flag: visible_flag  #g
+
+      settings:
+        api_key: api_key  #g
+        copyright_text: copyright_text  #g
+        ct_prod_api_key: ct_prod_api_key  #g
+        ct_prod_api_secret: ct_prod_api_secret  #g
+        custom_css: custom_css  #g
+        custom_js: custom_js  #g
+        default_campaign: :activerecord.models.default_campaign  #g
+        facebook_description: facebook_description  #g
+        facebook_image_content_type: facebook_image_content_type  #g
+        facebook_image_file_name: facebook_image_file_name  #g
+        facebook_image_file_size: facebook_image_file_size  #g
+        facebook_image_updated_at: facebook_image_updated_at  #g
+        facebook_title: facebook_title  #g
+        header_link_text: header_link_text  #g
+        header_link_url: header_link_url  #g
+        homepage_content: homepage_content  #g
+        indexable: indexable  #g
+        initialized_flag: initialized_flag  #g
+        logo_image_content_type: logo_image_content_type  #g
+        logo_image_file_name: logo_image_file_name  #g
+        logo_image_file_size: logo_image_file_size  #g
+        logo_image_updated_at: logo_image_updated_at  #g
+        phone_number: phone_number  #g
+        reply_to_email: reply_to_email  #g
+        site_name: site_name  #g
+        tweet_text: tweet_text  #g
+
+      user:
+        admin: admin  #g
+        current_sign_in_at: current_sign_in_at  #g
+        current_sign_in_ip: current_sign_in_ip  #g
+        email: "Eメール"  #g
+        password: "パスワード"
+        encrypted_password: encrypted_password  #g
+        fullname: "姓名"  #g
+        last_sign_in_at: last_sign_in_at  #g
+        last_sign_in_ip: last_sign_in_ip  #g
+        remember_created_at: remember_created_at  #g
+        reset_password_sent_at: reset_password_sent_at  #g
+        reset_password_token: reset_password_token  #g
+        wants_admin_payment_notification: wants_admin_payment_notification  #g

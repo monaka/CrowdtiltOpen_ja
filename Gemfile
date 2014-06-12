@@ -7,6 +7,7 @@ gem 'pg'
 gem 'unicorn'
 gem 'foreman'
 gem 'i18n'
+gem 'i18n_generators'
 
 gem 'crowdtilt', github: 'Crowdtilt/crowdtilt-gem'
 gem 'devise', '~> 3.2.0'
