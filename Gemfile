@@ -22,7 +22,7 @@ gem 'momentjs-rails'
 gem 'sass', '3.2.13'
 
 # Front-end
-gem 'bootstrap-sass', '2.1'
+gem 'bootstrap-sass', '3.3.1.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
