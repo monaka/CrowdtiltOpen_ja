@@ -10,7 +10,7 @@ gem 'i18n'
 gem 'i18n_generators'
 
 gem 'crowdtilt', github: 'Crowdtilt/crowdtilt-gem'
-gem 'devise', '~> 3.2.0'
+gem 'devise', '~> 3.5.10'
 gem 'nokogiri'
 gem 'friendly_id', '~> 4.0.9'
 gem 'iso_country_codes'
