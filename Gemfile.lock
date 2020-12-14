@@ -24,8 +24,9 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    active_model_serializers (0.8.1)
-      activemodel (>= 3.0)
+    active_model_serializers (0.9.8)
+      activemodel (>= 3.2)
+      concurrent-ruby (~> 1.0)
     activemodel (3.2.13)
       activesupport (= 3.2.13)
       builder (~> 3.0.0)
@@ -72,6 +73,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    concurrent-ruby (1.1.7)
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -161,7 +163,7 @@ GEM
     mini_portile (0.6.0)
     momentjs-rails (2.6.0)
       railties (>= 3.1)
-    multi_json (1.10.1)
+    multi_json (1.15.0)
     multipart-post (1.2.0)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
